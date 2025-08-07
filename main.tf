@@ -5,7 +5,9 @@
 # | | | | | | (_| | | | | || |_| |   
 # |_| |_| |_|\__,_|_|_| |_(_)__|_|   
                                     
-                                    
+# Notice our main.tf is all we need to configure and our already created module does the rest. We don't need to even look at the module code.
+# We simply provide the correct values to the module and run it.
+
 #=======================#
 # Define Variables Here #
 #=======================#
@@ -19,7 +21,7 @@ variable "region" {
 
 module "web-app" {
     
-# Our source is just our GitHub repo.
+# Our source is just our GitHub repo where our module code lives.
     source  = "https://github.com/tkerbe2/iac-intro-lab-5"
 
 # For this example I have used all the same variables but you can change these for your deployment. 
