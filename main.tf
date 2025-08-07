@@ -22,7 +22,7 @@ variable "region" {
 module "web-app" {
     
 # Our source is just our GitHub repo where our module code lives.
-    source  = "git::https://github.com:tkerbe2/iac-intro-lab-5.git//modules/web-app"
+    source  = "git::https://github.com/tkerbe2/iac-intro-lab-5.git//modules/web-app"
 
 # For this example I have used all the same variables but you can change these for your deployment. 
     borrowed_bits = 5
